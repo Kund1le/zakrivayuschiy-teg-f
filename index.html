@@ -66,7 +66,7 @@
         <p class="text">«Ничего не понятно, но очень интересно.»</p>
         </div>
         <div class="card-button">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               class="like-icon"
               aria-hidde="true"
@@ -97,7 +97,7 @@
                   fill="var(--heart-main-color)"/>  
             </svg>
           </button>
-          <button class="card__like-button button-animate">
+          <button type="button" class="card__like-button button-animate">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -125,7 +125,7 @@
               если бы мы знали, что это такое, но мы не знаем, что это такое.»</p>
           </div>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -156,7 +156,7 @@
                     fill="var(--heart-main-color)"/>  
               </svg>
             </button>
-            <button class="card__like-button button-animate">
+            <button type="button" class="card__like-button button-animate">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -182,7 +182,7 @@
               никогда бы не подумали так высоко строить дом.»</p>
           </div>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -210,7 +210,7 @@
                       fill="var(--heart-main-color)"/>  
               </svg>
             </button>
-            <button class="card__like-button button-animate">
+            <button type="button" class="card__like-button button-animate">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -237,7 +237,7 @@
             <p class="text">«У меня порода, у тебя ботокс.»</p>
           </div>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -265,7 +265,7 @@
                   fill="var(--heart-main-color)"/>  
               </svg>
             </button>
-            <button class="card__like-button button-animate">
+            <button type="button" class="card__like-button button-animate">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -293,7 +293,7 @@
             <p class="text">«Солнышко, давай, я тебя люблю, давай, мой сыночек, давай, чуть-чуть осталось.»</p>
           </div>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -321,7 +321,7 @@
                   fill="var(--heart-main-color)"/>  
               </svg>
             </button>
-            <button class="card__like-button button-animate">
+            <button type="button" class="card__like-button button-animate">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -346,7 +346,7 @@
               <p class="text">«Неправильно! Широкую на широкую надо.»</p>
             </div>
             <div class="card-button">
-              <button class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
                   aria-hidden="true"
@@ -374,7 +374,7 @@
                   fill="var(--heart-main-color)"/>  
                 </svg>
               </button>
-              <button class="card__like-button button-animate">
+              <button type="button" class="card__like-button button-animate">
                 <span class="button__text">Like</span>
               </button>
             </div>
@@ -400,7 +400,7 @@
           <p class="text">«Моя голова уже начала идти кругом.»</p>
           </div>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button type="button" class="card__icon-button">
               <svg
                 class="like-icon"
                 aria-hidden="true"
@@ -431,7 +431,7 @@
                     fill="var(--heart-main-color)"/>  
               </svg>
             </button>
-            <button class="card__like-button button-animate">
+            <button type="button" class="card__like-button button-animate">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -464,7 +464,7 @@
               и вот этой гармонии от слияния с бесконечно вечным.»</p>
             </div>
             <div class="card-button">
-              <button class="card__icon-button">
+              <button type="button" class="card__icon-button">
                 <svg
                   class="like-icon"
                   aria-hidden="true"
@@ -495,14 +495,15 @@
                       fill="var(--heart-main-color)"/>  
                 </svg>
               </button>
-              <button class="card__like-button button-animate">
+              <button type="button" class="card__like-button button-animate">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </div>
           </section>
-          <div class="footer" method="dialog">
-            <form
+          <div class="footer">
+            <button
+              type="button"
               class="footer-button button-animate"
               onclick="window['popup'].showModal()"
               aria-controls="popup">
@@ -510,10 +511,11 @@
               <use href="./svg/floppy-footer.svg#floppy-footer"></use>
             </svg>
             <span class="button__text">Сохранить на память</span>
-            </form>
+            </button>
             </div>
     </main>
       <dialog class="popup" id="popup">
+        <form method="dialog">
         <div class="popup-card">
           <svg class="popup-image" viewBox="0 0 39 39">
             <use href="./svg/floppy-popup.svg#floppy-popup"></use>
@@ -526,6 +528,7 @@
           onclick="window['popup'].close()">
           <span class="button__text">OK</span>
         </button>
+      </form>
       </dialog>
     <script src="./scripts/like.js"></script>
   </body>
