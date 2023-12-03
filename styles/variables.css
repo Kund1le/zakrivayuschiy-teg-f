@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-  --header-font: 'Press Start 2P', fantasy;
-  --main-font: 'Inter-Variable', sans-serif;
+  --header-font: 'Press Start 2P';
+  --main-font: 'Inter-Variable';
   --subtitle-font-weight: 700;
   --text-font-weight: 400;
   --background-color: #FFF;
@@ -12,12 +12,11 @@
       linear-gradient(to bottom, #E7E7E7, #1A1A1A);
   --desktop-title-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   --mobile-title-size: clamp(2.625rem, 0.08rem + 12.727vw, 3.063rem);
-  --mob-title-size: 49px;
+  --mobile-title-size: 49px;
   --button-font-size: 14px;
   --subtitle-size: 18px;
   --desktop-subtitle-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   --section-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
-  --section-height: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
   --label-inset: clamp(0.688rem, 0.379rem + 1.315vw, 1.563rem);
   --label-shadow-color: #FFF;
   --button-text-color: #FFF;

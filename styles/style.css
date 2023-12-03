@@ -28,7 +28,6 @@
 
 .header {
   inline-size: var(--section-width);
-  block-size: var(--section-height);
   margin: 0 auto 100px;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
@@ -44,6 +43,7 @@
 .header-title {
   font-size: var(--desktop-title-size);
   padding-block-end: 20px;
+  padding-block-start: 120px;
 }
 
 .header-subtitle {
