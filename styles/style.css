@@ -366,7 +366,7 @@
 }
 
 @media (width <= 376px) {
-  .title {
+  .header-title {
     font-size: var(--mobile-title-size);
   }
 
